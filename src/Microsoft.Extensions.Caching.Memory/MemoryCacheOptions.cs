@@ -10,7 +10,7 @@ namespace Microsoft.Extensions.Caching.Memory
     public class MemoryCacheOptions : IOptions<MemoryCacheOptions>
     {
         public ISystemClock Clock { get; set; }
-
+        //why this set? 
         public bool CompactOnMemoryPressure { get; set; } = true;
 
         public TimeSpan ExpirationScanFrequency { get; set; } = TimeSpan.FromMinutes(1);
